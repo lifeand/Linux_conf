@@ -1,0 +1,38 @@
+URxvt.urgentOnBell: true
+xpdf.title: PDF
+XTerm*locale: true
+XTerm*utf8Title: true
+XTerm*fontMenu*fontdefault*Label: Default
+XTerm*font: -misc-fixed-medium-r-normal-*-18-120-100-100-c-90-iso10646-1
+XTerm*wideFont: -misc-fixed-medium-r-normal-*-18-120-100-100-c-180-iso10646-1
+XTerm*faceSize: 0
+XTerm*faceSize1: 0
+XTerm*faceSize2: 0
+XTerm*faceSize3: 0
+XTerm*faceSize4: 0
+XTerm*faceSize5: 0
+XTerm*faceSize6: 0
+XTerm.cjkWidth: true
+XTerm*background: #000000
+XTerm*foreground: green
+XTerm*scrollBar: false
+XTerm*rightScrollBar: false
+XTerm*jumpScroll: true 
+XTerm*SaveLines:  1000
+xterm.*.geometry: 81x25
+XTerm*inputMethod: fcitx
+!--------------copy and paste-------------------
+!!mouse selecting to copy, ctrl-v to paste
+!!Ctrl p to print screen content to file
+xterm*VT100.Translations: #override \
+Ctrl <KeyPress> z: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+<BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+Ctrl <KeyPress> p: print() \n
+
+!------------- EMACS -----------------------
+emacs.paneFont:  8x16
+Emacs.pane.menubar.font: 8x16
+Emacs.foreground: white
+Emacs.background: black
+emacs.geometry:  70x35
+
