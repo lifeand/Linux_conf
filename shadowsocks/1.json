@@ -1,0 +1,10 @@
+{
+        "server" : "47.91.228.5",
+        "server_port" : 999,
+        "password" : "ntdtv.com",
+        "method" : "aes-256-cfb",
+        "protocol" : "auth_sha1_v4",
+        "obfs" : "plain",
+        "obfsparam" : ""
+}
+

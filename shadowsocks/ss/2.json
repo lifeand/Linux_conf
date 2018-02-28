@@ -1,0 +1,15 @@
+                {
+                        "remarks" : "update_2017.10.05",
+                        "server" : "104.160.181.22",
+                        "server_port" : 888,
+                        "server_udp_port" : 0,
+                        "password" : "ntdtv.com",
+                        "method" : "aes-256-cfb",
+                        "protocol" : "auth_sha1_v4",
+                        "protocolparam" : "",
+                        "obfs" : "plain",
+                        "obfsparam" : "",
+                        "group" : "alvin9999",
+                        "enable" : true,
+                        "udp_over_tcp" : false
+                }

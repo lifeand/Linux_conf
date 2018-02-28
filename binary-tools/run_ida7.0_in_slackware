@@ -1,0 +1,6 @@
+python2.7x64 
+
+https://www.winehq.org/pipermail/wine-devel/2010-December/088174.html
+
+wine64 msiexec /i python-2.7.6.amd64.msi ALLUSERS=1
+

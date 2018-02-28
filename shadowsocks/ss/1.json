@@ -1,0 +1,18 @@
+{
+  "server": "a.isxb.bid",
+  "server_ipv6": "::",
+  "server_port": 443,
+  "local_address": "127.0.0.1",
+  "local_port": 1080,
+  "password": "54594094",
+  "timeout": 300,
+  "udp_timeout": 60,
+  "method": "aes-256-cfb",
+  "protocol": "",
+  "protocol_param": "",
+  "obfs": "",
+  "obfs_param": "",
+  "fast_open": false,
+  "workers": 1,
+  "group": "Charles Xu"
+}

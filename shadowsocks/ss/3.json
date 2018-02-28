@@ -1,0 +1,15 @@
+                {
+                        "remarks" : "update_2017.10.24",
+                        "server" : "45.77.202.84",
+                        "server_port" : 443,
+                        "server_udp_port" : 0,
+                        "password" : "zh-cn.shenyun.com",
+                        "method" : "aes-128-ctr",
+                        "protocol" : "auth_sha1_v4",
+                        "protocolparam" : "",
+                        "obfs" : "",
+                        "obfsparam" : "",
+                        "group" : "alvin9999",
+                        "enable" : true,
+                        "udp_over_tcp" : false
+                }
