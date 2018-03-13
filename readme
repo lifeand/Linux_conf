@@ -1,0 +1,31 @@
+https://dangokyo.me
+http://blog.dragonsector.pl
+https://0xabe.io/
+https://nandynarwhals.org/
+http://4ngelboy.blogspot.sg/
+
+
+
+tips:
+1. 使用Printf 来触发malloc,free 
+通过修改__malloc_hook 为system, 加上'sh\0\0' 地址-32 
+ if (width >= sizeof (work_buffer) / sizeof (work_buffer[0]) - 32)
+       {
+	        /* We have to use a special buffer.  The "32" is just a safe
+		           bet for all the output which is not counted in the width.  */
+	        size_t needed = ((size_t) width + 32) * sizeof (CHAR_T);
+		     if (__libc_use_alloca (needed))
+			workend = (CHAR_T *) alloca (needed) + width + 32;
+		     else
+			             {
+	workstart = (CHAR_T *) malloc (needed);
+
+
+1.I've put "sh\0\0" in main binary's .data section.
+2.Then overwritten __malloc_hook with the address of system.
+3.And triggered the whole thing by using a "%WIDTHs" tag, where WIDTH was the address of said "sh\0\0" minus 32.
+
+http://blog.dragonsector.pl/2017/03/0ctf-2017-easiestprintf-pwn-150.html
+
+2. FILE exploit
+https://www.slideshare.net/AngelBoy1/play-with-file-structure-yet-another-binary-exploit-technique
