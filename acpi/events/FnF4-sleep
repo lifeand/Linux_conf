@@ -1,0 +1,2 @@
+event=button/sleep
+action=/etc/acpi/actions/FnF4-sleep.sh
